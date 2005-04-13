@@ -7,8 +7,8 @@ Group:		Applications/Editors/Vim
 Source0:	http://www.geocities.com/yegappan/taglist/taglist_40b1.zip
 # Source0-md5:	5624b94870461bb2971130ed34aa7386
 URL:		http://www.geocities.com/yegappan/taglist/
-Requires:	vim >= 6.3
-Requires:	vim < 6.4
+Requires:	vim >= 4:6.3.0
+Requires:	vim < 4:6.4.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
