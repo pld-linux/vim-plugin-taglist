@@ -9,13 +9,18 @@ Source0:	http://www.geocities.com/yegappan/taglist/taglist_40b1.zip
 URL:		http://www.geocities.com/yegappan/taglist/
 Requires:	vim >= 4:6.3.0
 Requires:	vim < 4:6.4.0
+Requires:	ctags
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_vimdatadir	%{_datadir}/vim/vim63
 
 %description
-The "Tag List" plugin is a source code browser for the Vim editor. It provides an overview of the structure of source code files and allows you to efficiently browse through source code files in different programming languages. It is the top-rated and most-downloaded plugin for the Vim editor.
+The "Tag List" plugin is a source code browser for the Vim editor. It
+provides an overview of the structure of source code files and allows
+you to efficiently browse through source code files in different
+programming languages. It is the top-rated and most-downloaded plugin
+for the Vim editor.
 
 %prep
 %setup -q -c
