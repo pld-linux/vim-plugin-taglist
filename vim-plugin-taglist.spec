@@ -1,4 +1,5 @@
 Summary:	Source code browser for the Vim editor
+Summary(pl):	Przegl±darka kodu ¼ród³owego dla edytora Vim
 Name:		vim-plugin-taglist
 Version:	4.0
 Release:	0.b1.1
@@ -21,6 +22,13 @@ provides an overview of the structure of source code files and allows
 you to efficiently browse through source code files in different
 programming languages. It is the top-rated and most-downloaded plugin
 for the Vim editor.
+
+%description -l pl
+Wtyczka "Tag List" to przegl±darka kodu ¼ród³owego dla edytora Vim.
+Udostêpnia widok struktury plików kodu ¼ród³owego i umo¿liwia
+efektywne przegl±danie plików z kodem w ró¿nych jêzykach
+programowania. Jest to jedna z najczê¶ciej ¶ci±ganych wtyczek dla
+Vima.
 
 %prep
 %setup -q -c
