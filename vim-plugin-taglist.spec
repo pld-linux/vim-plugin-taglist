@@ -2,19 +2,19 @@ Summary:	Source code browser for the Vim editor
 Summary(pl):	Przegl±darka kodu ¼ród³owego dla edytora Vim
 Name:		vim-plugin-taglist
 Version:	4.0
-Release:	0.b1.1
+Release:	0.b1.3
 License:	GPL
 Group:		Applications/Editors/Vim
 Source0:	http://www.geocities.com/yegappan/taglist/taglist_40b1.zip
 # Source0-md5:	5624b94870461bb2971130ed34aa7386
 URL:		http://www.geocities.com/yegappan/taglist/
-Requires:	vim >= 4:6.3.0
-Requires:	vim < 4:6.4.0
+# for _vimdatadir existence
+Requires:	vim >= 4:6.3.058-3
 Requires:	ctags
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_vimdatadir	%{_datadir}/vim/vim63
+%define		_vimdatadir	%{_datadir}/vim/vimfiles
 
 %description
 The "Tag List" plugin is a source code browser for the Vim editor. It
@@ -45,9 +45,11 @@ cp -a doc plugin $RPM_BUILD_ROOT%{_vimdatadir}
 rm -rf $RPM_BUILD_ROOT
 
 %post
+umask 022
 echo ':helptags %{_vimdatadir}/doc' | vim -e -s
 
 %postun
+umask 022
 echo ':helptags %{_vimdatadir}/doc' | vim -e -s
 
 %files
