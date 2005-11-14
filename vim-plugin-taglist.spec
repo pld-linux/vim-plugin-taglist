@@ -49,8 +49,10 @@ umask 022
 echo ':helptags %{_vimdatadir}/doc' | vim -e -s
 
 %postun
-umask 022
-echo ':helptags %{_vimdatadir}/doc' | vim -e -s
+if [ "$1" = 0 ]; then
+	umask 022
+	echo ':helptags %{_vimdatadir}/doc' | vim -e -s
+fi
 
 %files
 %defattr(644,root,root,755)
