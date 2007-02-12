@@ -1,5 +1,5 @@
 Summary:	Source code browser for the Vim editor
-Summary(pl.UTF-8):   Przeglądarka kodu źródłowego dla edytora Vim
+Summary(pl.UTF-8):	Przeglądarka kodu źródłowego dla edytora Vim
 Name:		vim-plugin-taglist
 Version:	4.1
 Release:	1
