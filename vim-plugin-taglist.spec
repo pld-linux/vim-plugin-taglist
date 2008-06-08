@@ -9,7 +9,7 @@ Source0:	http://www.geocities.com/yegappan/taglist/taglist.zip
 # Source0-md5:	4a555833ca58fc98889259bbbb004a3a
 URL:		http://www.geocities.com/yegappan/taglist/
 # for _vimdatadir existence
-Requires:	vim >= 4:6.3.058-3
+Requires:	vim-rt >= 4:6.3.058-3
 Requires:	ctags
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
