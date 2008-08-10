@@ -1,13 +1,14 @@
 Summary:	Source code browser for the Vim editor
 Summary(pl.UTF-8):	Przeglądarka kodu źródłowego dla edytora Vim
 Name:		vim-plugin-taglist
-Version:	4.1
+Version:	4.5
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Vim
-Source0:	http://www.geocities.com/yegappan/taglist/taglist.zip
-# Source0-md5:	4a555833ca58fc98889259bbbb004a3a
-URL:		http://www.geocities.com/yegappan/taglist/
+Source0:	http://dl.sourceforge.net/vim-taglist/taglist_45.zip
+# Source0-md5:	99b5366a64eea6092bb140df7d4c1a95
+URL:		http://vim-taglist.sourceforge.net/
+BuildRequires:	unzip
 # for _vimdatadir existence
 Requires:	vim-rt >= 4:6.3.058-3
 Requires:	ctags
